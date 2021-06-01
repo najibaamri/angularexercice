@@ -1,0 +1,11 @@
+<ul *ngFor="let item of menu">
+  <li>{{ item.name }}</li>
+
+  <ul *ngFor="let sub of item.submenus">
+    <li>{{ sub.name }}</li>
+
+    <ul *ngFor="let subm of sub.submenus">
+      <li>{{ subm.name }}</li>
+    </ul>
+  </ul>
+</ul>
